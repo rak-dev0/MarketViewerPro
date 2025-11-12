@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+pydantic>=2.5.0
+pydantic-settings
+yfinance
+requests
+pandas
+numpy
+scikit-learn
+joblib
+feedparser
+nltk
+pytest
+httpx
+pytest-asyncio

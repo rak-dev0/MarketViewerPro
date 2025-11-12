@@ -1,0 +1,1 @@
+python train_models.py --tickers SPY,QQQ,AAPL,MSFT,NVDA,AVGO,META,GOOGL,AMZN,TSLA --period 5y

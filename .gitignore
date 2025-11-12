@@ -1,0 +1,21 @@
+# ---- python
+backend/venv/
+__pycache__/
+*.pyc
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/models/            # <-- joblib models - large, reproducible
+backend/storage/*.db       # <-- local sqlite caches
+backend/storage/*.sqlite
+backend/.env
+
+# ---- node
+frontend/node_modules/
+frontend/dist/
+frontend/.eslintcache
+
+# ---- os / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
