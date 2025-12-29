@@ -1,3 +1,4 @@
+![UI Visual](visual.png)
 Stack: FastAPI (backend) + React/Vite (frontend) + Recharts (charts) + yfinance (data)
 
 Status: MVP working. Stable endpoints. Conservative signals. Good enough to iterate.
