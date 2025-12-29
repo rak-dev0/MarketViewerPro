@@ -85,32 +85,6 @@ Restart the API after training:
 
 uvicorn app.main:app --reload
 
-# Troubleshooting
-
-White screen / Vite error about styles.css
-
-Make sure frontend/src/styles.css exists and is imported in src/main.jsx.
-
-“No price data for this ticker” (404)
-
-Ticker typo or delisted (e.g., MFST vs MSFT). Try a different symbol.
-
-“Upstream price provider failed” (502)
-
-Data providers are flaky sometimes. Try again; baseline will still work for already-cached names.
-
-Prediction always says “baseline”
-
-You didn’t train RF v1, or the API can’t find models. Train with the command above and restart the backend.
-
-Scikit-learn warnings about feature names
-
-We pass numpy arrays at predict-time now, so warnings should be gone. If you see any, they’re harmless.
-
-All zeros / flat lines
-
-Usually means Yahoo returned empty/invalid rows. The backend now rejects “all-zero” payloads and tries fallbacks; refresh or change the ticker.
-
 # License / disclaimer
 
 No license yet, assume private use.
